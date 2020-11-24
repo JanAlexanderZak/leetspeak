@@ -118,7 +118,7 @@ class RunPytestMypyPylint:
         text[text.index('mypy  \n') + 1] = f"{mypy_url}\n"
 
         # Pylint
-        shieldio_dict["mypy_color"] = "red" if float(self.pylint_score[0:5]) < 5 else "brightgreen"
+        shieldio_dict["mypy_color"] = "red" if float(self.pylint_score[1:5]) < 5 else "brightgreen"
         pylint_url = "![Build Status](https://img.shields.io/badge/dynamic/json?color={}&label={}&query={}&url={})".format(
             shieldio_dict['pylint_color'],
             shieldio_dict['pylint_label'],
