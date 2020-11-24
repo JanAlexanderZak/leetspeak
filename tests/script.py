@@ -95,7 +95,7 @@ class RunPytestMypyPylint:
 
     def generate_shieldio_url(self, shieldio_dict):
         # Fixed for all
-        url = "https%3A%2F%2Fraw.githubusercontent.com%2FJanAlexanderZak%2Fcicd_template%2Fmaster%2Ftests%2Fpackage.json"
+        url = "https%3A%2F%2Fraw.githubusercontent.com%2FJanAlexanderZak%2Fleetspeak%2Fmaster%2Ftests%2Fpackage.json"
         with open(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'README.md')), 'r') as f:
             text = f.readlines()
 
