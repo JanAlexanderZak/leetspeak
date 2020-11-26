@@ -1,12 +1,6 @@
 import pytest
 
 
-
-
-def test_fixture(my_fixture):
-    assert my_fixture == 7
-
-
 def test_convert_to_leet(instantiate_converter):
     leet_string = instantiate_converter("test string")
     assert isinstance(leet_string, str)
@@ -24,3 +18,9 @@ def test_convert_to_leet(instantiate_converter):
 def test_sample_strings(string, expected, instantiate_converter):
     leet_string = instantiate_converter(string)
     assert leet_string == expected
+
+
+"""
+def test_fixture(my_fixture):
+    assert my_fixture == 7
+"""
