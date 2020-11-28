@@ -1,5 +1,5 @@
-from typing import Dict, Pattern
 import re
+from typing import Dict, Pattern
 
 
 class LeetspeekConverter:
@@ -10,7 +10,7 @@ class LeetspeekConverter:
         self.leet_dict: Dict[str, str] = dict(zip(self.TEXT, self.LEET))
 
     def convert_to_leet(self, text) -> str:
-        """ ...
+        """ Hack to implement multiple re.sub on the same string in one go
         https://stackoverflow.com/questions/35713540/replace-more-than-one-pattern-python
         """
         regex: Pattern[str] = re.compile(r"(%s)" % "|".join(map(re.escape, self.leet_dict.keys())))
@@ -20,7 +20,6 @@ class LeetspeekConverter:
 if __name__ == "__main__":
     input_string = input("Please enter a string: \n")
 
-    # catch mby binary or raw strings?
     if not isinstance(input_string, str):
         print("Your input was not a string")
         exit(0)
