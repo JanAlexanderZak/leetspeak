@@ -14,31 +14,21 @@ pylint
 ![Build Status](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=pylint&query=status_pylint&url=https%3A%2F%2Fraw.githubusercontent.com%2FJanAlexanderZak%2Fleetspeak%2Fmaster%2Ftests%2Fpackage.json)
 
 
-# CICD template
-
-<details>
-
-## Table of contents
-* [Folder Structure](#folder-structure)
-
-
-</details>
-
-## Summary
-The project will be located in ./src and any tests in ./tests.  
-Configuration files for tests are located in ./tests.  
-Badges update automatically after running ./tests/script.py --update.  
+# Leetcode implementation with regex
+A simple implementation of a leetspeak converter using the 'template_cicd' repo.  
 
 ## Folder structure
 ```markdown
 .  
 +-- src
-|   +-- main.py  
+|   +-- leetspeak.py  
 +-- tests  
+|   +-- src  
+    |   +-- test_leetspeak.py  
+|   +-- .pylintrc  
 |   +-- mypy.ini  
 |   +-- package.json 
 |   +-- pytest.ini  
-|   +-- requirements.txt  
 |   +-- script.bat  
 |   +-- script.py  
 |   +-- test_main.py  
