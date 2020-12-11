@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <!-- + random timestamp to avoid browser cache -->
+        <link href="{% static 'leestspeak_app/styles.css' %}?{% now 'U' %}" rel="stylesheet">
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
