@@ -1,5 +1,5 @@
 import pytest
-from src.leetspeak import LeetspeekConverter
+from leetspeak.leetspeak_app.views import LeetspeekConverter
 
 
 @pytest.fixture
